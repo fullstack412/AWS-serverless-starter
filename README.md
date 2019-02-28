@@ -275,4 +275,4 @@ Thanks to Shovon Hasan for his article on [Deploying a TypeScript + Node AWS Lam
 
 ## About the author
 
-This project is maintaned by [György Balássy](https://linkedin.com/in/balassy).
+The original author of this project is [Gyorgy Balassy](https://linkedin.com/in/balassy). 
