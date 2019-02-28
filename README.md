@@ -1,4 +1,6 @@
-# AWS Lambda in TypeScript
+# Serverless Starter - AWS Lambda in TypeScript
+
+## This repo has been forked from [github](https://github.com/balassy/aws-lambda-typescript) and has been customised to fit the needs of Tapendium
 
 This sample uses the [Serverless Application Framework](https://serverless.com/) to implement an AWS Lambda function in TypeScript, deploy it via CloudFormation, and publish it through API Gateway.
 
@@ -273,4 +275,4 @@ Thanks to Shovon Hasan for his article on [Deploying a TypeScript + Node AWS Lam
 
 ## About the author
 
-This project is maintaned by [GyÃ¶rgy BalÃ¡ssy](https://linkedin.com/in/balassy).
+This project is maintaned by [György Balássy](https://linkedin.com/in/balassy).
