@@ -11,7 +11,7 @@
         "cloudformation:CreateStack",
         "cloudformation:UpdateStack"
       ],
-      "Resource": "arn:aws:cloudformation:<region>:<account_no>:stack/<service_name>*"
+      "Resource": "arn:aws:cloudformation:us-west-2:582125531402:stack/*-service-*"
     },
     {
       "Effect": "Allow",
@@ -27,7 +27,7 @@
         "s3:List*"
       ],
       "Resource": [
-        "arn:aws:s3:::<your_deployment_bucket>"
+        "arn:aws:s3:::serverless-bucket"
       ]
     },
     {
@@ -36,7 +36,7 @@
         "s3:*"
       ],
       "Resource": [
-        "arn:aws:s3:::<your_deployment_bucket>/*"
+        "arn:aws:s3:::serverless-bucket/*"
       ]
     },
     {
@@ -44,7 +44,7 @@
       "Action": [
         "logs:DescribeLogGroups"
       ],
-      "Resource": "arn:aws:logs:<region>:<account_no>:log-group::log-stream:*"
+      "Resource": "arn:aws:logs:us-west-2:582125531402:log-group::log-stream:*"
     },
     {
       "Action": [
@@ -55,7 +55,7 @@
         "logs:DescribeLogStreams",
         "logs:FilterLogEvents"
       ],
-      "Resource": "arn:aws:logs:<region>:<account_no>:log-group:/aws/lambda/<service_name>*:log-stream:*",
+      "Resource": "arn:aws:logs:us-west-2:582125531402:log-group:/aws/lambda/*-service-*:log-stream:*",
       "Effect": "Allow"
     },
     {
@@ -71,7 +71,7 @@
         "iam:DeleteRolePolicy"
       ],
       "Resource": [
-        "arn:aws:iam::<account_no>:role/<service_name>*-lambdaRole"
+        "arn:aws:iam::582125531402:role/*-service-*-lambdaRole"
       ]
     },
     {
@@ -84,7 +84,7 @@
         "apigateway:PATCH"
       ],
       "Resource": [
-        "arn:aws:apigateway:<region>::/restapis"
+        "arn:aws:apigateway:us-west-2::/restapis"
       ]
     },
     {
@@ -97,7 +97,7 @@
         "apigateway:PATCH"
       ],
       "Resource": [
-        "arn:aws:apigateway:<region>::/restapis/*"
+        "arn:aws:apigateway:us-west-2::/restapis/*"
       ]
     },
     {
@@ -119,7 +119,7 @@
         "lambda:InvokeFunction"
       ],
       "Resource": [
-        "arn:aws:lambda:*:<account_no>:function:<service_name>*"
+        "arn:aws:lambda:*:582125531402:function:*-service-*"
       ]
     },
     {
@@ -141,14 +141,14 @@
         "events:Delete*",
         "events:Describe*"
       ],
-      "Resource": "arn:aws:events::<account_no>:rule/<service_name>*"
+      "Resource": "arn:aws:events::582125531402:rule/*-service-*"
     },
     {
       "Effect": "Allow",
       "Action": [
           "acm:ListCertificates"
       ],
-      "Resource": "arn:aws:acm:<region>:<account_no>:certificate/*"
+      "Resource": "arn:aws:acm:us-west-2:582125531402:certificate/*"
     },
     {
         "Effect": "Allow",
@@ -162,7 +162,7 @@
       "Action": [
           "route53:ChangeResourceRecordSets"
       ],
-      "Resource": "arn:aws:route53:::hostedzone/<hosted_zone_ID>/rrset"
+      "Resource": "arn:aws:route53:::hostedzone/Z1E9YGD6ALGPKE/rrset"
     },
     {
       "Effect": "Allow",
