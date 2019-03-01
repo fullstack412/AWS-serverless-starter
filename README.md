@@ -1,4 +1,6 @@
-# AWS Lambda in TypeScript
+# Serverless Starter - AWS Lambda in TypeScript
+
+## This repo has been forked from [github](https://github.com/balassy/aws-lambda-typescript) and has been customised to fit the needs of Tapendium
 
 This sample uses the [Serverless Application Framework](https://serverless.com/) to implement an AWS Lambda function in TypeScript, deploy it via CloudFormation, and publish it through API Gateway.
 
@@ -252,25 +254,21 @@ EPERM: operation not permitted, symlink 'C:\Git\aws-lambda-typescript\node_modul
 
 On Windows you need **Administrator privileges** to run `serverless` commands (see [Issue 23](https://github.com/graphcool/serverless-plugin-typescript/issues/23)).
 
-## Got feedback?
+## Getting updates from the original [github repo](https://github.com/balassy/aws-lambda-typescript)
 
-Your feedback is more than welcome, please send your suggestions, feature requests or bug reports as [Github issues](https://github.com/balassy/aws-lambda-typescript/issues).
+In order to pull any changes from the GitHub repository, use the commands below to merge them into the Bitbucket repository:
 
-## Contributing guidelines
+```
+git fetch upstream master
+git merge upstream/master
+git push
+```
 
-Contributions of all kinds are welcome, please feel free to send Pull Requests. As they are requirements of successful build all linters and tests MUST pass, and also please make sure you have a reasonable code coverage for new code.
+[More Info on how to set it up](https://paazmaya.fi/forking-a-repository-from-github-to-bitbucket)
 
-Thanks for your help in making this project better!
-
-## Read more
-
-* [Serverless.yml Reference](https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/)
-
-## Acknowledments
-
-Thanks to Shovon Hasan for his article on [Deploying a TypeScript + Node AWS Lambda Function with Serverless](https://blog.shovonhasan.com/deploying-a-typescript-node-aws-lambda-function-with-serverless/).
+Please note that while creating such a private fork of an open source project, any useful changes should be made available to the original project, as the people involved with it are in most cases working for free and out of passion for the code.
 
 
 ## About the author
 
-This project is maintaned by [György Balássy](https://linkedin.com/in/balassy).
+The original author of this project is [Gyorgy Balassy](https://linkedin.com/in/balassy). 
