@@ -1,8 +1,8 @@
-service: serverless-sample
+service: serverless-starter
 
 provider:
   name: aws
-  runtime: nodejs6.10
+  runtime: nodejs8.10
   stage: demo
   region: us-east-1
   iamRoleStatements:
@@ -123,8 +123,8 @@ custom:
   documentation: ${file(./swagger/documentation.yml)}
   customDomain:
     basePath: "api"
-    domainName: serverless-sample.balassy.me
-    certificateName: serverless-sample.balassy.me
+    domainName: serverless-starter.tapendium.com.au
+    certificateName: serverless-starter.tapendium.com.au
     stage: ${self:provider.stage}
     createRoute53Record: true
   output:
