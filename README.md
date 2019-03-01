@@ -94,8 +94,8 @@ service: serverless-starter
 ```
 custom:
   customDomain:
-    domainName: serverless-sample.balassy.me
-    certificateName: serverless-sample.balassy.me
+    domainName: serverless-starter.tapendium.com.au
+    certificateName: serverless-starter.tapendium.com.au
 ```
 
 **NOTE:** You must have the certificate created in [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/) before executing this command. According to AWS to use an ACM certificate with API Gateway, you must [request or import the certificate](https://serverless.com/blog/serverless-api-gateway-domain/) in the US East (N. Virginia) region.
