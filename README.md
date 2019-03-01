@@ -86,7 +86,7 @@ npm install
 6. **Customize the name of your service** by changing the following line in the `serverless.yml` file:
 
 ```
-service: serverless-sample
+service: serverless-starter
 ```
 
 7. **Customize the name of your domain** by changing the following lines in the `serverless.yml` file:
@@ -161,7 +161,7 @@ Additional useful `npm script`s:
 serverless invoke local --function getCity
 ```
 
-**To run the service locally, run:** _This command requires Administrator privileges on Windows!_
+**To run the service locally, run:** _This command requires Administrator privileges on Windows!_ _OSX users see [here](http://osxdaily.com/2014/04/12/restore-original-hosts-file-mac/)
 
 ```bash
 npm start
