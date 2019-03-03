@@ -263,7 +263,6 @@ git fetch upstream master
 git merge upstream/master
 git push
 ```
-
 [More Info on how to set it up](https://paazmaya.fi/forking-a-repository-from-github-to-bitbucket)
 
 Please note that while creating such a private fork of an open source project, any useful changes should be made available to the original project, as the people involved with it are in most cases working for free and out of passion for the code.
