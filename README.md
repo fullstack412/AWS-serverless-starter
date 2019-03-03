@@ -95,12 +95,14 @@ service: serverless-starter
 custom:
   customDomain:
     domainName: serverless-starter.tapendium.com.au
-    certificateName: serverless-starter.tapendium.com.au
+    certificateName: "*.tapendium.com.au"
 ```
 
 **NOTE:** You must have the certificate created in [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/) before executing this command. According to AWS to use an ACM certificate with API Gateway, you must [request or import the certificate](https://serverless.com/blog/serverless-api-gateway-domain/) in the US East (N. Virginia) region.
 
 If you don't want to publish your API to a custom domain, remove the `serverless-domain-manager` from the `plugins` section, and the `customDomains` entry from the `custom` section of the `serverless.yml` file.
+
+**Wild Card Certificate:** Make sure that the wildcard certificate is within double quotes
 
 ## What you can find in the code
 

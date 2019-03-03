@@ -124,7 +124,7 @@ custom:
   customDomain:
     basePath: "api"
     domainName: serverless-starter.tapendium.com.au
-    certificateName: serverless-starter.tapendium.com.au
+    certificateName: "*.tapendium.com.au"
     stage: ${self:provider.stage}
     createRoute53Record: true
   output:
