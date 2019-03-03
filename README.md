@@ -130,7 +130,7 @@ You can also reference the `swagger.json` URL when you publish your documentatio
 
 ### Health check endpoints
 
-The `/health/check` and the `/health/check/detailed` endpoints in the `src/health` folder are provided to run quick checks on your API after deployment.
+The `/health/check` and the `/health/detailed` endpoints in the `src/health` folder are provided to run quick checks on your API after deployment.
 
 ## Developer tasks
 
