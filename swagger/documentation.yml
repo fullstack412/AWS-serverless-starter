@@ -4,8 +4,8 @@ api:
     title: Example City API
     description: Example API that demonstrates the features of the aws-lambda-typescript project.
     contact:
-      name: György Balássy
-      url: https://www.linkedin.com/in/balassy
+      name: Ashley Hurkoo
+      url: https://www.tapendium.com
     license:
       name: MIT
       url: https://raw.githubusercontent.com/balassy/aws-lambda-typescript/master/LICENSE
