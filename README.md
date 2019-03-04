@@ -102,7 +102,7 @@ custom:
 
 If you don't want to publish your API to a custom domain, remove the `serverless-domain-manager` from the `plugins` section, and the `customDomains` entry from the `custom` section of the `serverless.yml` file.
 
-**Wild Card Certificate:** Make sure that the wildcard certificate is within double quotes
+**Wild Card Certificate:** Make sure that the wildcard certificate is within double quotes.
 
 ## What you can find in the code
 
