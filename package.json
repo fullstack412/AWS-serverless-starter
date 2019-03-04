@@ -26,11 +26,11 @@
     "tslint",
     "typescript"
   ],
-  "author": "György Balássy",
-  "license": "MIT",
+  "author": "Benie Worldwide Pty Ltd",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "git://github.com/balassy/aws-lambda-typescript.git"
+    "url": "git@bitbucket.org:tapendium/serverless-starter.git"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.13",
