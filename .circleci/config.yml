@@ -29,7 +29,6 @@ jobs:
           name: Runs all pre-deploy analysis and creates the deployment package, but does not install it onto AWS.
           command: npm run build
 
-      - store_test_results:
-          path: coverage
-      - store_artifacts:
-          path: coverage     
+      - store_artifacts: # upload test coverage as artifact
+          path: coverage/lcov.info
+          prefix: tests  
