@@ -1,21 +1,16 @@
 # Serverless Starter - AWS Lambda in TypeScript
 
-## This repo has been forked from [github](https://github.com/balassy/aws-lambda-typescript) and has been customised to fit the needs of Tapendium
 
 This sample uses the [Serverless Application Framework](https://serverless.com/) to implement an AWS Lambda function in TypeScript, deploy it via CloudFormation, and publish it through API Gateway.
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
-[![Linux Build Status](https://travis-ci.org/balassy/aws-lambda-typescript.svg?branch=master)](https://travis-ci.org/balassy/aws-lambda-typescript)
-[![Windows Build status](https://ci.appveyor.com/api/projects/status/cuo6yvampkiids7i/branch/master?svg=true)](https://ci.appveyor.com/project/balassy/aws-lambda-typescript/branch/master)
-[![Coverage Status](https://coveralls.io/repos/github/balassy/aws-lambda-typescript/badge.svg)](https://coveralls.io/github/balassy/aws-lambda-typescript)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/balassy/aws-lambda-typescript/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/balassy/aws-lambda-typescript.svg)](https://github.com/balassy/aws-lambda-typescript/issues)
+[![CircleCI](https://circleci.com/bb/tapendium/serverless-starter.svg?style=svg&circle-token=fc16fc71250f88b125e4362f0e63af2646a7e2f7)](https://circleci.com/bb/tapendium/serverless-starter)
 [![Swagger Validator](https://img.shields.io/swagger/valid/2.0/https/serverless-sample.balassy.me/api/swagger.json.svg)](https://app.swaggerhub.com/apis/balassy/serverless-sample)
 
 [![Known Vulnerabilities](https://snyk.io/test/github/balassy/aws-lambda-typescript/badge.svg?targetFile=package.json)](https://snyk.io/test/github/balassy/aws-lambda-typescript?targetFile=package.json)
 [![Dependencies](https://david-dm.org/balassy/aws-lambda-typescript/status.svg)](https://david-dm.org/balassy/aws-lambda-typescript)
 [![DevDependencies](https://david-dm.org/balassy/aws-lambda-typescript/dev-status.svg)](https://david-dm.org/balassy/aws-lambda-typescript#type=dev)
-[![codebeat badge](https://codebeat.co/badges/cd3e0118-3d7f-4c0d-8d27-14d05df5a356)](https://codebeat.co/projects/github-com-balassy-aws-lambda-typescript-master)
+[![codebeat badge](https://codebeat.co/badges/b96119c3-6d9b-4a6a-9ffb-1165523a032a)](https://codebeat.co/a/ashley/projects/bitbucket-org-tapendium-serverless-starter-master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/balassy/aws-lambda-typescript.svg)](https://greenkeeper.io/)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2154/badge)](https://bestpractices.coreinfrastructure.org/projects/2154)
 
@@ -251,7 +246,7 @@ To view the generated Swagger documentation, deploy your API or start it locally
 ## Problems?
 
 ```
-EPERM: operation not permitted, symlink 'C:\Git\aws-lambda-typescript\node_modules' -> 'C:\Git\aws-lambda-typescript\.build\node_modules'
+EPERM: operation not permitted, symlink 'C:\Git\serverless-starter\node_modules' -> 'C:\Git\serverless-starter\.build\node_modules'
 ```
 
 On Windows you need **Administrator privileges** to run `serverless` commands (see [Issue 23](https://github.com/graphcool/serverless-plugin-typescript/issues/23)).
