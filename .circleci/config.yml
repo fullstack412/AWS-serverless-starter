@@ -19,12 +19,7 @@ jobs:
           command: |
             sudo npm i -g serverless
             npm install
-
-      - store_test_results:
-          path: ~/coverage
-      - store_artifacts:
-          path: ~/coverage               
-
+            
       - save_cache:
           paths:
             - node_modules
@@ -33,3 +28,8 @@ jobs:
       - run:
           name: Runs all pre-deploy analysis and creates the deployment package, but does not install it onto AWS.
           command: npm run build
+
+      - store_test_results:
+          path: ~/coverage
+      - store_artifacts:
+          path: ~/coverage     
