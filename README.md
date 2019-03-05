@@ -7,6 +7,7 @@ This sample uses the [Serverless Application Framework](https://serverless.com/)
 [![CircleCI](https://circleci.com/bb/tapendium/serverless-starter.svg?style=svg&circle-token=fc16fc71250f88b125e4362f0e63af2646a7e2f7)](https://circleci.com/bb/tapendium/serverless-starter)
 [![Swagger Validator](https://img.shields.io/swagger/valid/2.0/https/serverless-sample.balassy.me/api/swagger.json.svg)](https://app.swaggerhub.com/apis/balassy/serverless-sample)
 
+
 [![Known Vulnerabilities](https://snyk.io/test/github/balassy/aws-lambda-typescript/badge.svg?targetFile=package.json)](https://snyk.io/test/github/balassy/aws-lambda-typescript?targetFile=package.json)
 [![Dependencies](https://david-dm.org/balassy/aws-lambda-typescript/status.svg)](https://david-dm.org/balassy/aws-lambda-typescript)
 [![DevDependencies](https://david-dm.org/balassy/aws-lambda-typescript/dev-status.svg)](https://david-dm.org/balassy/aws-lambda-typescript#type=dev)
