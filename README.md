@@ -1,7 +1,10 @@
 # Serverless Starter - AWS Lambda in TypeScript
 
-
 This sample uses the [Serverless Application Framework](https://serverless.com/) to implement an AWS Lambda function in TypeScript, deploy it via CloudFormation, and publish it through API Gateway.
+
+## All new Serverless projects should fork this repository by click [here](https://bitbucket.org/tapendium/serverless-starter/fork)
+
+- Change the owner to Tapendium and select the relevant project
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 [![CircleCI](https://circleci.com/bb/tapendium/serverless-starter.svg?style=svg&circle-token=fc16fc71250f88b125e4362f0e63af2646a7e2f7)](https://circleci.com/bb/tapendium/serverless-starter)
