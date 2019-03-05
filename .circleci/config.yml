@@ -20,6 +20,11 @@ jobs:
             sudo npm i -g serverless
             npm install
 
+      - store_test_results:
+          path: ~/coverage
+      - store_artifacts:
+          path: ~/coverage               
+
       - save_cache:
           paths:
             - node_modules
