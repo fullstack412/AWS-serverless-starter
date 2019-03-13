@@ -8,3 +8,7 @@ export interface City {
 export interface GetCityResult {
   city: City;
 }
+
+export type CitiesServiceSettings = {
+  defaultCountry: string;
+};

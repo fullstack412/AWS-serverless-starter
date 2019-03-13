@@ -11,11 +11,11 @@ export class ApiClient {
     };
   }
 
-  public getHealthCheck(): rp.RequestPromise {
+  public getHealthCheck(): rp.RequestPromise<rp.FullResponse> {
     return rp('/health/check', this._options);
   }
 
-  public getSwaggerJson(): rp.RequestPromise {
+  public getSwaggerJson(): rp.RequestPromise<rp.FullResponse> {
     return rp('/swagger.json', this._options);
   }
 }
