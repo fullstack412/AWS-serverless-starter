@@ -13,7 +13,7 @@ describe('Swagger', () => {
 
   before(async () => {
     const client: ApiClient = new ApiClient();
-    response = await client.getSwaggerJson() as rp.FullResponse;
+    response = await client.getSwaggerJson();
     responseBody = JSON.parse(response.body as string) as GetSwaggerResult;
   });
 
@@ -27,7 +27,7 @@ describe('Swagger', () => {
   });
 
   it('should return CORS headers', () => {
-    const corsHeaderValue: string = <string> response.headers['access-control-allow-origin'];
+    const corsHeaderValue: string | undefined = response.headers['access-control-allow-origin'];
     expect(corsHeaderValue).to.eql('*');
   });
 });

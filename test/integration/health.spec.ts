@@ -11,7 +11,7 @@ describe('Health check', () => {
 
   before(async () => {
     const client: ApiClient = new ApiClient();
-    response = await client.getHealthCheck() as rp.FullResponse;
+    response = await client.getHealthCheck();
     responseBody = JSON.parse(response.body as string) as GetHealthCheckResult;
   });
 
