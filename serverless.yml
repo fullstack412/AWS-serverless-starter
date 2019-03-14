@@ -3,7 +3,8 @@ service: serverless-starter
 provider:
   name: aws
   runtime: nodejs8.10
-  stage: demo
+  stage: ${opt:stage, 'dev'}
+  environment: ${file(env.yml):${self:provider.stage}}
   region: us-east-1
   iamRoleStatements:
     - Effect: "Allow"
