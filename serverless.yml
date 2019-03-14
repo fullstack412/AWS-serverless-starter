@@ -121,11 +121,12 @@ functions:
               - ${file(./swagger/error-responses/internal-server-error.yml)}
 
 custom:
+  stageConfig: ${file(env.yml):${self:provider.stage}}
   documentation: ${file(./swagger/documentation.yml)}
   customDomain:
-    basePath: "api"
-    domainName: serverless-starter.tapendium.com.au
-    certificateName: "*.tapendium.com.au"
+    basePath: ${self:service}
+    domainName: ${self:custom.stageConfig.domainName}
+    certificateName: ${self:custom.stageConfig.certificateName}
     stage: ${self:provider.stage}
     createRoute53Record: true
   output:
