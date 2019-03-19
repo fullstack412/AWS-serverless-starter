@@ -1,6 +1,6 @@
 service: serverless-starter-service
 
-frameworkVersion: '>=1.39 <1.40'
+frameworkVersion: '1.39.1'
 
 provider:
   name: aws
