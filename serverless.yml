@@ -1,5 +1,7 @@
 service: serverless-starter-service
 
+frameworkVersion: '>=1.39 <1.40'
+
 provider:
   name: aws
   runtime: nodejs8.10
