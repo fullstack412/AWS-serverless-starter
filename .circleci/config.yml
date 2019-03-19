@@ -29,6 +29,10 @@ jobs:
           name: Runs all pre-deploy analysis and creates the deployment package, but does not install it onto AWS.
           command: npm run build
 
+      - run:
+          name: Deploy App to Dev Region
+          command: npm run deploy
+
       - store_artifacts: # upload test coverage as artifact
           path: coverage/lcov.info
           prefix: tests  
