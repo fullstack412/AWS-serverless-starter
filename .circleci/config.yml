@@ -26,11 +26,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-          name: Runs all pre-deploy analysis and creates the deployment package, but does not install it onto AWS.
-          command: npm run build
-
-      - run:
-          name: Deploy App to Dev Region
+          name: Runs all pre-deploy analysis and Deploy to Dev Region
           command: npm run deploy
 
       - store_artifacts: # upload test coverage as artifact
