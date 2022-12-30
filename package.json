@@ -44,7 +44,7 @@
     "chai": "^4.2.0",
     "chance": "^1.0.18",
     "coveralls": "^3.0.3",
-    "mocha": "^6.0.2",
+    "mocha": "^10.2.0",
     "nyc": "^13.3.0",
     "request-promise-native": "^1.0.7",
     "rimraf": "^2.6.3",
